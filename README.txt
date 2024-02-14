@@ -12,7 +12,7 @@ Welcome to my personal GitHub repository, featuring a collection of my engineeri
 
 5. Robotic Arm - Creation of a prototype robotic arm for shapes detection with an ESP32 camera and collection of different objects.
 
-6. Robotic Car - Development of a robotic car with advanced analysis and obstacle avoidance for safe orbital operations.
+6. Robotic Car - Development of a robotic car with advanced image processing and AI algorithm (developed using Orange software) and obstacle avoidance for safe orbital operations.
 
 7. Sound Filter - Design and testing of a sound frequency-selective light system, allowing illumination of LEDs based on sound frequencies.
 
