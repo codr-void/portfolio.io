@@ -1,0 +1,1 @@
+cmd_/home/codr/ECE373/assignment1/d_kernel/Module.symvers := sed 's/\.ko$$/\.o/' /home/codr/ECE373/assignment1/d_kernel/modules.order | scripts/mod/modpost -m -a  -o /home/codr/ECE373/assignment1/d_kernel/Module.symvers -e -i Module.symvers   -T -

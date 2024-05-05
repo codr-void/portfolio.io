@@ -1,0 +1,28 @@
+2. Use https://elixir.bootlin.com/ to search for the following:
+A. Search for "usb_device". In what file is the structure defined, and what are the first five
+members of the struct?
+ANS:
+- Defined in usb.h file (/nclude/linux/usb.h). 
+- The first five members of the struct are:
+    (1) int devnum;
+    (2) char devpath[16];
+    (3) u32 route;
+    (4) enum usb_device_state state;
+    (5) enum usb_device_speed speed;
+
+B. In what header file is the type declared for the 5th member of the struct? (hint: don't look in test tools or staging directories)
+ANS:
+- Declared in ch9.h (/include/uapi/linux/usb/ch9.h).
+
+C. Include the entire enumeration declaration from above.
+ANS:
+	/* USB 2.0 defines three speeds, here's how Linux identifies them */
+
+	enum usb_device_speed {
+		USB_SPEED_UNKNOWN = 0,			/* enumerating */
+		USB_SPEED_LOW, USB_SPEED_FULL,	/* usb 1.1 */
+		USB_SPEED_HIGH,			/* usb 2.0 */
+		USB_SPEED_WIRELESS,			/* wireless (usb 2.5) */
+		USB_SPEED_SUPER,			/* usb 3.0 */
+		USB_SPEED_SUPER_PLUS,			/* usb 3.1 */
+	};

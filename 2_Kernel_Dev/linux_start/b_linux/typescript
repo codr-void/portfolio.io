@@ -1,0 +1,20 @@
+Script started on 2024-04-08 02:12:31-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;codr@ubuntu: ~[01;32mcodr@ubuntu[00m:[01;34m~[00m$ pwd
+/home/codr
+]0;codr@ubuntu: ~[01;32mcodr@ubuntu[00m:[01;34m~[00m$ ls -l
+total 32
+drwxr-xr-x 3 codr codr 4096 Apr  8 02:11 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mDocuments[0m
+drwxr-xr-x 2 codr codr 4096 Apr  7 22:19 [01;34mDownloads[0m
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mMusic[0m
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mPictures[0m
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mPublic[0m
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mTemplates[0m
+-rw-rw-r-- 1 codr codr    0 Apr  8 02:12 typescript
+drwxr-xr-x 2 codr codr 4096 Apr  2 19:37 [01;34mVideos[0m
+]0;codr@ubuntu: ~[01;32mcodr@ubuntu[00m:[01;34m~[00m$ mkdir ECE373
+]0;codr@ubuntu: ~[01;32mcodr@ubuntu[00m:[01;34m~[00m$ cd ECE373
+]0;codr@ubuntu: ~/ECE373[01;32mcodr@ubuntu[00m:[01;34m~/ECE373[00m$ exit
+exit
+
+Script done on 2024-04-08 02:13:27-07:00 [COMMAND_EXIT_CODE="0"]

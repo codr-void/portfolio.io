@@ -1,0 +1,69 @@
+codr@ubuntu:~/ECE373/assignment1/c_gnu$ ls
+closeout.h  config.h  gettext.h  hello.c  system.h
+codr@ubuntu:~/ECE373/assignment1/c_gnu$ gcc -o hello hello.c
+codr@ubuntu:~/ECE373/assignment1/c_gnu$ gdb hello
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.1) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...
+(No debugging symbols found in hello)
+(gdb) break main
+Breakpoint 1 at 0x12b4
+(gdb) step
+The program is not being run.
+(gdb) step
+The program is not being run.
+(gdb) run
+Starting program: /home/codr/ECE373/assignment1/c_gnu/hello 
+
+Breakpoint 1, 0x00005555555552b4 in main ()
+(gdb) step
+Single stepping until exit from function main,
+which has no line number information.
+__GI_setlocale (category=6, locale=0x55555555603a "") at setlocale.c:218
+218	setlocale.c: No such file or directory.
+(gdb) step
+225	in setlocale.c
+(gdb) step
+230	in setlocale.c
+(gdb) step
+234	in setlocale.c
+(gdb) step
+236	in setlocale.c
+(gdb) step
+217	in setlocale.c
+(gdb) next
+0x0000555555555306 in main ()
+(gdb) next
+Single stepping until exit from function main,
+which has no line number information.
+Hello, world!
+[Inferior 1 (process 12223) exited normally]
+(gdb) next
+The program is not being run.
+(gdb) continue
+The program is not being run.
+(gdb) run
+Starting program: /home/codr/ECE373/assignment1/c_gnu/hello 
+
+Breakpoint 1, 0x00005555555552b4 in main ()
+(gdb) continue
+Continuing.
+Hello, world!
+[Inferior 1 (process 12228) exited normally]
+(gdb) quit
+codr@ubuntu:~/ECE373/assignment1/c_gnu$ ./hello
+Hello, world!
+

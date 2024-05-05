@@ -1,0 +1,31 @@
+1. Look at the man page for the "open()" system call, found in section two of the manpages.
+
+
+A. List the BUGS when using the system call
+ANS: 
+- It is not possible to enable signal-driven I/O by specifying O_ASYNC when calling open(); use fcntl(2) to enable this flag.
+- One must check for two different error codes, EISDIR and ENOENT, when trying to determine whether the kernel supports O_TMPFILE functionality.
+- When both O_CREAT and O_DIRECTORY are specified in flags and the file specified by pathname does not exist, open() will create a regular file (i.e., O_DIRECTORY is ignored).
+
+
+B. What files need to be included to use this function?
+ANS:
+- Need to include <fcntl.h> to use the open() function.
+
+
+C. List the first three related system calls to open()
+ANS:
+- The first three related system calls might include creat(), close(), and fcntl().
+
+
+D. Choose one of the system calls from above and list its bugs (also list what system call you chose) and files needing to be included to use the system call
+ANS:
+Chosen system call: fcntl()
+Bugs:
+F_SETFL: It is not possible to use `F_SETFL` to change the state of the `O_DSYNC` and `O_SYNC` flags. Attempts to change the state of these flags are silently ignored.
+F_GETOWN: On some architectures (notably i386), a limitation of the Linux system call conventions means that if a (negative) process group ID to be returned by `F_GETOWN` falls in the range -1 to -4095, then the return value is wrongly interpreted by glibc as an error in the system call. The Linux-specific `F_GETOWN_EX` operation avoids this problem.
+F_SETOWN: In Linux 2.4 and earlier, there is a bug that can occur when an unprivileged process uses `F_SETOWN` to specify the owner of a socket file descriptor as a process (group) other than the caller. Despite an error return, the file descriptor owner is set, and signals will be sent to the owner.
+Deadlock detection: The deadlock-detection algorithm employed by the kernel when dealing with `F_SETLKW` requests can yield both false negatives (failures to detect deadlocks) and false positives (EDEADLK errors when there is no deadlock).
+Mandatory locking: The Linux implementation of mandatory locking is subject to race conditions which render it unreliable. It is therefore inadvisable to rely on mandatory locking.
+To use the `fcntl()` function in code:
+#include <fcntl.h>   // include the `<fcntl.h>` header file

@@ -1,0 +1,22 @@
+After Visiting Learning the Shell:
+	Notes on basic commands such as:
+        "pwd" to print the current working directory.
+        "ls" and ls -l to list files in the current directory (short and long form).
+        "mkdir" to make a new directory.
+        "cd" to change the working directory.
+        "cp" to copy a file.
+
+Useed the script Command:
+    Opend the Terminal and enter the command script to start recording your session.
+    Performed the following actions:
+        A. Used pwd to determine the current directory.
+        B. Used ls -l to show the files in that directory with file permissions.
+        C. Used mkdir ECE373 to make a directory called ECE373.
+        D. Used cd ECE373 to change the working directory to ECE373.
+        E. Exited the script session by typing exit.
+
+Viewed Typescript File:
+
+    On Terminal, typed "gedit"
+    From File > Open menu located and opened the typescript file you created.
+    A screenshot is provided within directory

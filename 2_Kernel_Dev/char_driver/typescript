@@ -1,0 +1,129 @@
+Script started on 2024-04-28 18:14:55-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="55"]
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ ls
+char_dev.c  Makefile  typescript  userspace.c
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ mak[K[K[Kls
+char_dev.c  Makefile  typescript  userspace.c
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ make all [K
+make -C /lib/modules/5.15.0-101-generic/build M=/home/codr/ECE373/assignment2 modules
+make[1]: Entering directory '/usr/src/linux-headers-5.15.0-101-generic'
+  CC [M]  /home/codr/ECE373/assignment2/char_dev.o
+  MODPOST /home/codr/ECE373/assignment2/Module.symvers
+  CC [M]  /home/codr/ECE373/assignment2/char_dev.mod.o
+  LD [M]  /home/codr/ECE373/assignment2/char_dev.ko
+  BTF [M] /home/codr/ECE373/assignment2/char_dev.ko
+Skipping BTF generation for /home/codr/ECE373/assignment2/char_dev.ko due to unavailability of vmlinux
+make[1]: Leaving directory '/usr/src/linux-headers-5.15.0-101-generic'
+gcc -o userspace userspace.c
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ ls
+char_dev.c  char_dev.ko  char_dev.mod  char_dev.mod.c  char_dev.mod.o  char_dev.o  Makefile  modules.order  Module.symvers  typescript  [0m[01;32muserspace[0m  userspace.c
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ lsmake allls[Ksudo rm /dev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1clear[K[3Plsclearscriptudo rm /dev/char1[9Pmake cleasudo rm /dev/char1cript[Kudo rm /dev/char1[9Pmake clean[6P/devcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1[8Pmake cleansudo rm /dev/char1mod char_devcript[K[1Pclearmake cleanls[Ksudo rm /dev/char1mod char_devcat /sys/module/char1/parameters[21P./userspace[3Pmake allclean./userspace[3Pmake allls[Kcd assignment2..[K[3Plsgit clone git@github.com:ECE-373/assignment-1-hello-linux-codr-void.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ..assignment2ls[Kmake all./userspace[1Pmake clean[2Pall./userspacecat /sys/module/char1/parameters[13Psudo rmmod char_dev[1P /dev/char1ls[Kmake clean[5Pclearscriptudo rmmod char_dev[1P /dev/char1[8Pmake cleansudo rm /dev/char1mod char_devcript[Kudo rmmod char_dev[1P /dev/char1[8Pmake cleansudo rm /dev/char1clear[K[3Plsclearscriptudo rm /dev/char1[9Pmake clean[6P/devcd /devls[Ksudo rm char/chardev/charls[K[K[Ksudo insmod char_dev.ko [K
+[sudo] password for codr: 
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ cat proc/proc[C[C[C[C/devices
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  5 ttyprintk
+  6 lp
+  7 vcs
+ 10 misc
+ 13 input
+ 21 sg
+ 29 fb
+ 89 i2c
+ 99 ppdev
+108 ppp
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+202 cpu/msr
+203 cpu/cpuid
+204 ttyMAX
+226 drm
+237 char1
+238 aux
+239 cec
+240 lirc
+241 hidraw
+242 vfio
+243 bsg
+244 watchdog
+245 remoteproc
+246 ptp
+247 pps
+248 rtc
+249 dma_heap
+250 dax
+251 dimmctl
+252 ndctl
+253 tpm
+254 gpiochip
+
+Block devices:
+  7 loop
+  8 sd
+  9 md
+ 11 sr
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+253 device-mapper
+254 mdp
+259 blkext
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sodi [K[K[Kdu mknod /dev/char1 c 237 0[C[1P[1P[1P[1@u[1@s[1@o[1P[1P[1@d[1@o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+mknod: /dev/char1: File exists
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sodi [K[K[K[Kudo chmod 666 /dev/ca[Khar1
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclearscriptudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1[8Pmake cleansudo rm /dev/char1mod char_devcript[K[1Pclearmake cleanls[Ksudo rm /dev/char1mod char_devcat /sys/module/char1/parameters[21P./userspace[3Pmake allclean[2Pall./userspace
+Initial value read from device: 42
+Enter new value to write to device: 97
+New value written to device: 97
+Value read from device after write: 42
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ ./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1[8Pmake cleansudo rm /dev/char1mod char_devcript[K[1Pclearmake cleanls[Ksudo rm /dev/char1mod char_devcat /sys/module/char1/parameters[21P./userspace[3Pmake allclean./userspace[3Pmake allls[Kcd assignment2..[K[3Plsgit clone git@github.com:ECE-373/assignment-1-hello-linux-codr-void.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kgit clone git@github.com:ECE-373/assignment-2-character-driver-codr-void.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd git[K[4Plsmkdir gitls[Kcd ECE373[3Prm git[3@mkdir[C[C[C[Cssh -T git@github.comcat ~/.ssh/id_ed25519.pubssh-add ~/.ssh/id_ed25519keygen -t ed25519 -C "wael@pdx.edu"your_email@example.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K[1P..e ..sudo apt install openssh-client[20P./userspace[3Pmake all./userspacecd /sys/module/char1/parameters/ls[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcd /sys/module/char1/parameters[1@at[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21P./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo mknod dev/char1 c 237 0[5Pinsmod char_dev.ko[12P./userspacels[K./userspace[3Pmake allsudo rm /dev/char1cat /sys/module/char1/parametersscript[K[1Pclear[3Plsmake cleansudo rmmod char_devcript[K[1Pclearscript[1Pclearscriptmake clean[6Pexitdmesg | tailsudo rmmod char_devecho "Hello, device" > /dev/char1[10Psudo insmod char_dev.ko[4Prmmod char_devinsmod char_dev.koecho "Hello, device" > /dev/char1
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ echo "Hello, device" > /dev/char1[22P./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1[8Pmake cleansudo rm /dev/char1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo rmmod char_devcript[K[1Pclearmake cleanls[Ksudo rm /dev/char1mod char_dev
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sodu [K[K[K[K[Ksudo insmod char_dev [K [K.ko insitial [K[K[K[K[K[K[K[K[Kinitial [K_val=80
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sudo insmod char_dev.ko initial_val=80[19Prmmod char_dev
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sudo rmmod char_devinsmod char_dev.ko initial_val=80[19Prmmod char_devecho "Hello, device" > /dev/char1[22P./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1cript[K[1Pclear[3Plsclearsudo rm /dev/char1[8Pmake clean[Ksudo rmmod char_devcript[K[1Pclearmake cleanls[Ksudo rm /dev/char1mod char_devcat /sys/module/char1/parameters[21P./userspace[3Pmake allclean./userspace[3Pmake allls[Kcd assignment2..[K[3Plsgit clone git@github.com:ECE-373/assignment-1-hello-linux-codr-void.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kgit clone git@github.com:ECE-373/assignment-2-character-driver-codr-void.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdmsg | tail[1@e[C[C[C
+[131250.056788] User got from us 42
+[131253.808491] In the write() system call
+[131253.808495] Userspace wrote "a" to us
+[131286.279566] successfully opened!
+[131286.279591] In the write() system call
+[131286.279593] Userspace wrote "Hello, device
+                " to us
+[131307.712255] char1 module unloaded!
+[131353.731189] char1 module loading... initial_val=80
+[131357.090949] char1 module unloaded!
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ dmesg | tailsudo rmmod char_devinsmod char_dev.ko initial_val=80[19Prmmod char_devecho "Hello, device" > /dev/char1[22P./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchardev/char1
+rm: cannot remove '/dev/char1': No such file or directory
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ sudo rm /dev/char1[6Pdmesg | tailsudo rmmod char_devinsmod char_dev.ko initial_val=80[19Prmmod char_devecho "Hello, device" > /dev/char1[22P./userspaceecho "Hello, device" > /dev/char1[22P./userspacesudo chmod 666 /dev/char1mknod /dev/char1 c 237 0[12Pcat /proc/devicessudo insmod char_dev.kols[Kmake allls[Ksudo rm /dev/char[4Pchar[1Pchar/chardev/char[4Pchar[1Pcharls[Kcd /dev[3P/devmake clean[Ksudo rm /dev/char1
+rm: cannot remove '/dev/char1': No such file or directory
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ make clean
+make -C /lib/modules/5.15.0-101-generic/build M=/home/codr/ECE373/assignment2 clean
+make[1]: Entering directory '/usr/src/linux-headers-5.15.0-101-generic'
+  CLEAN   /home/codr/ECE373/assignment2/Module.symvers
+make[1]: Leaving directory '/usr/src/linux-headers-5.15.0-101-generic'
+rm -f userspace
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ ls
+char_dev.c  Makefile  typescript  userspace.c
+]0;codr@ubuntu: ~/ECE373/assignment2[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment2[00m$ exit
+exit
+
+Script done on 2024-04-28 18:21:02-07:00 [COMMAND_EXIT_CODE="0"]

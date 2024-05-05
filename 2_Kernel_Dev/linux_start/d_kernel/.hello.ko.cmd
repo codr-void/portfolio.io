@@ -1,0 +1,1 @@
+cmd_/home/codr/ECE373/assignment1/d_kernel/hello.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/codr/ECE373/assignment1/d_kernel/hello.ko /home/codr/ECE373/assignment1/d_kernel/hello.o /home/codr/ECE373/assignment1/d_kernel/hello.mod.o;  true

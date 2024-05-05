@@ -1,0 +1,57 @@
+Script started on 2024-04-08 04:31:36-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;codr@ubuntu: ~/ECE373/assignment1/c_gnu[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment1/c_gnu[00m$ sudo dmesg | tail[Krmmod helloinsmod hello.kolsmod|grep hello[K[6Pmake cleanls[Kcd d_kernel..[Ktouch output.txt[9P./hellogdb hello
+[35;1m[35;1mGNU gdb [m[35;1m(Ubuntu 9.2-0ubuntu1~20.04.1) [m[35;1m9.2[m[35;1m
+[m[mCopyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32mhello[m...
+(No debugging symbols found in [32mhello[m)
+(gdb) break main
+Breakpoint 1 at [34m0x12b4[m
+(gdb) run
+Starting program: /home/codr/ECE373/assignment1/c_gnu/hello 
+
+Breakpoint 1, [34m0x00005555555552b4[m in [33mmain[m ()
+(gdb) next[K[K[K[Kstep
+Single stepping until exit from function main,
+which has no line number information.
+[33m__GI_setlocale[m ([36mcategory[m=6, [36mlocale[m=0x55555555603a "") at [32msetlocale.c[m:218
+218	setlocale.c: No such file or directory.
+(gdb) step
+225	in [32msetlocale.c[m
+(gdb) next
+230	in [32msetlocale.c[m
+(gdb) continue
+Continuing.
+Hello, world!
+[Inferior 1 (process 1824) exited normally]
+(gdb) fini[K[K[K[Kfinish
+The program is not being run.
+(gdb) finish[K[K[K[K[K[Krun
+Starting program: /home/codr/ECE373/assignment1/c_gnu/hello 
+
+Breakpoint 1, [34m0x00005555555552b4[m in [33mmain[m ()
+(gdb) finish
+"finish" not meaningful in the outermost frame.
+(gdb) continue
+Continuing.
+Hello, world!
+[Inferior 1 (process 1829) exited normally]
+(gdb) quit
+]0;codr@ubuntu: ~/ECE373/assignment1/c_gnu[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment1/c_gnu[00m$ gdb hellosudo dmesg | tail[Krmmod helloinsmod hello.kolsmod|grep hello[K[6Pmake cleanls[Kcd d_kernel..[Ktouch output.txt[9P./hellogdb hello[2P./hello
+Hello, world!
+]0;codr@ubuntu: ~/ECE373/assignment1/c_gnu[01;32mcodr@ubuntu[00m:[01;34m~/ECE373/assignment1/c_gnu[00m$ exit
+exit
+
+Script done on 2024-04-08 04:33:04-07:00 [COMMAND_EXIT_CODE="0"]
