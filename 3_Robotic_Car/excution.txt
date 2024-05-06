@@ -1,5 +1,0 @@
-cd MasterPi/Functions/
-
-
-
-sudo python3 Avoidance.py

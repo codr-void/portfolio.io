@@ -1,0 +1,182 @@
+┌──(ghst㉿kali)-[~/485_project]
+└─$ make run
+Compiling the project...
+gcc -o cache.exe main.c cache.c
+Compilation successful!
+type 'make run' to start..
+Running the executable...
+./cache.exe
+-------------------------------🌟 Welcome to the Cache Simulation Program 🌟-------------------------------
+Simulates various cache operations based on input hex trace .txt data file located within program directory
+-----------------------------------------------------------------------------------------------------------
+
+---------------------------Please select an operation mode (enter the number)------------------------------
+0: Simulation displays only the required summary of usage statistics and responses to 9s in the trace file.
+1: Simulation displays everything from  mode 0  but also includes  communication  messages to the L2 cache.
+2: Close the program.
+-----------------------------------------------------------------------------------------------------------
+Enter simulation mode number: 0
+
+
+         Pereperaing content tables...
+
+-----------------MESI States key----------------
+Modified(M), Exclusive(E), Shared(S), Invalid(I)
+------------------------------------------------
+
+Table 1: Data Cache Content
+------------------------------------------------
+ Way |   Address   |   Tag   | LRU | MESI State 
+------------------------------------------------
+  1  |  0x481c7631 |  0x481  |  5  |     M      
+------------------------------------------------
+  2  |  0x481c7631 |  0x481  |  4  |     M      
+------------------------------------------------
+  3  |  0x582c7632 |  0x582  |  3  |     E      
+------------------------------------------------
+  4  |  0x594c7615 |  0x594  |  2  |     E      
+------------------------------------------------
+  5  |  0x621c7600 |  0x621  |  1  |     E      
+------------------------------------------------
+  6  |  0x111c762c |  0x111  |  0  |     M      
+------------------------------------------------
+  7  |  0x00000000 |  0x000  |  6  |           
+------------------------------------------------
+  8  |  0x00000000 |  0x000  |  6  |           
+------------------------------------------------
+
+Table 2: Instruction Cache Content
+------------------------------------------------
+ Way |   Address   |   Tag   | LRU | MESI State 
+------------------------------------------------
+  1  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  2  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  3  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  4  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+
+Table 3: Cache Statistics
+------------------------------------------------
+ Metric                     |       Value      
+------------------------------------------------
+ Data Cache Reads           |         3        
+------------------------------------------------
+ Data Cache Writes          |         3        
+------------------------------------------------
+ Data Cache Hits            |         0        
+------------------------------------------------
+ Data Cache Misses          |         6        
+------------------------------------------------
+ Data Cache Hit/Miss Ratio  |        0.00       
+------------------------------------------------
+
+Table 4: Instruction Cache Statistics
+------------------------------------------------
+ Metric                           |    Value      
+------------------------------------------------
+ Instruction Cache Reads          |      0      
+------------------------------------------------
+ Instruction Cache Hits           |      0      
+------------------------------------------------
+ Instruction Cache Misses         |      0      
+------------------------------------------------
+ Instruction Cache Hit/Miss Ratio |     0.00     
+------------------------------------------------
+
+                                                                                                                                                                                                                                                            
+┌──(ghst㉿kali)-[~/485_project]
+└─$ make run
+Compiling the project...
+gcc -o cache.exe main.c cache.c
+Compilation successful!
+type 'make run' to start..
+Running the executable...
+./cache.exe
+-------------------------------🌟 Welcome to the Cache Simulation Program 🌟-------------------------------
+Simulates various cache operations based on input hex trace .txt data file located within program directory
+-----------------------------------------------------------------------------------------------------------
+
+---------------------------Please select an operation mode (enter the number)------------------------------
+0: Simulation displays only the required summary of usage statistics and responses to 9s in the trace file.
+1: Simulation displays everything from  mode 0  but also includes  communication  messages to the L2 cache.
+2: Close the program.
+-----------------------------------------------------------------------------------------------------------
+Enter simulation mode number: 1
+
+        Write to L2 481c7631 [write-through]
+        Write to L2 481c7631 [write-through]
+        Read from L2 582c7632 [data]
+        Read from L2 594c7615 [data]
+        Read from L2 621c7600 [data]
+        Write to L2 111c762c [write-through]
+
+         Pereperaing content tables...
+
+-----------------MESI States key----------------
+Modified(M), Exclusive(E), Shared(S), Invalid(I)
+------------------------------------------------
+
+Table 1: Data Cache Content
+------------------------------------------------
+ Way |   Address   |   Tag   | LRU | MESI State 
+------------------------------------------------
+  1  |  0x481c7631 |  0x481  |  5  |     M      
+------------------------------------------------
+  2  |  0x481c7631 |  0x481  |  4  |     M      
+------------------------------------------------
+  3  |  0x582c7632 |  0x582  |  3  |     E      
+------------------------------------------------
+  4  |  0x594c7615 |  0x594  |  2  |     E      
+------------------------------------------------
+  5  |  0x621c7600 |  0x621  |  1  |     E      
+------------------------------------------------
+  6  |  0x111c762c |  0x111  |  0  |     M      
+------------------------------------------------
+  7  |  0x00000000 |  0x000  |  6  |           
+------------------------------------------------
+  8  |  0x00000000 |  0x000  |  6  |           
+------------------------------------------------
+
+Table 2: Instruction Cache Content
+------------------------------------------------
+ Way |   Address   |   Tag   | LRU | MESI State 
+------------------------------------------------
+  1  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  2  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  3  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+  4  |  0x00000000 |  0x000  |  0  |           
+------------------------------------------------
+
+Table 3: Cache Statistics
+------------------------------------------------
+ Metric                     |       Value      
+------------------------------------------------
+ Data Cache Reads           |         3        
+------------------------------------------------
+ Data Cache Writes          |         3        
+------------------------------------------------
+ Data Cache Hits            |         0        
+------------------------------------------------
+ Data Cache Misses          |         6        
+------------------------------------------------
+ Data Cache Hit/Miss Ratio  |        0.00       
+------------------------------------------------
+
+Table 4: Instruction Cache Statistics
+------------------------------------------------
+ Metric                           |    Value      
+------------------------------------------------
+ Instruction Cache Reads          |      0      
+------------------------------------------------
+ Instruction Cache Hits           |      0      
+------------------------------------------------
+ Instruction Cache Misses         |      0      
+------------------------------------------------
+ Instruction Cache Hit/Miss Ratio |     0.00     
+------------------------------------------------

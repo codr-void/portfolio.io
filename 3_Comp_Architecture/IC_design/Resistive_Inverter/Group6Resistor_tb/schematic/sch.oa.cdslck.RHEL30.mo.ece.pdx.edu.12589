@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      mosiah
+HostName                       mo.ece.pdx.edu
+ProcessIdentifier              12589
+ProcessCreationTime_UTC        1697749966
+ProcessCreationTime_Readable   Thu Oct 19 14:12:46 2023 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /u/mosiah/cadence525/Resistive_Inverter/Group6Resistor_tb/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Oct 19 14:28:48 2023 PDT
