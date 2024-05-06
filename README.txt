@@ -1,6 +1,6 @@
 # Projects Repository README
-
 Welcome to my personal GitHub repository, featuring a collection of my engineering and development projects.
+
 A. Main skills: 
 * Proficient in C/C++, Python, and assembly for embedded software development, including kernel modules and device drivers.
 * Experienced with debugging tools like GDB and JTAG, optimizing software across embedded platforms and system components.
@@ -42,4 +42,3 @@ wael@pdx.edu
 
 Thank you for your interest in my work.
 Wail (Wa'el) AL KALBANI
-Projects Repository: github.com/codr-void/projects
