@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      background-color: #001f3f;
+      color: #ffffff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      border: 1px solid #007bff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      background-color: #002b5c;
+    }
+    h1 {
+      color: #00bfff;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello, I am a passionate <span class="highlight">Software Engineer</span>.</p>
+    <p>Explore my projects and get to know more about my work in the field of coding and development.</p>
+    <p><span class="blink">|</span></p>
+  </div>
+</body>
+</html>
