@@ -1,5 +1,6 @@
-# Projects Repository README
-Welcome to my personal GitHub repository, featuring a collection of my engineering and development projects.
+# Welcome to my personal GitHub repository
+*featuring a collection of my engineering and development projects.*
+
 <iframe src="https://github.com/codr-void/portfolio/blob/main/index.html" width="100%" height="200" frameborder="0"></iframe>
 
 A. Main skills: 
