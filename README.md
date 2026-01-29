@@ -1,46 +1,161 @@
-# Welcome to my personal GitHub repository
-*featuring a collection of my engineering and development projects.*
+# Engineering Portfolio
 
-<iframe src="https://github.com/codr-void/portfolio/blob/main/index.html" width="100%" height="200" frameborder="0"></iframe>
+This repository is a comprehensive engineering portfolio covering **Embedded Systems**, **SoC Design**, **IC Design**, **Operating Systems / Kernel Development**, and **Hardware–Software Co-Design**.  
+It contains academic and personal projects with full documentation, schematics, source code, and reports.
 
-A. Main skills: 
-* Proficient in C/C++, Python, and assembly for embedded software development, including kernel modules and device drivers.
-* Experienced with debugging tools like GDB and JTAG, optimizing software across embedded platforms and system components.
+---
 
-B. projects included in this repository:
+## 🔹 Featured Projects
 
-1. 5G_IIoT_Hub - Led the development of a 5G IIoT Hub for industrial motor control using Lattice FPGA boards, integrating RISC-V SoC for enhanced communication and control capabilities in Portland State University's ECE Capstone.
+### 🚗 Parking_BCB — Smart Parking Counter System
+**Embedded Systems | Hardware–Software Co-Design**
 
-2. Kernel_Dev - Developed a Linux kernel module (char_dev.c) and a corresponding userspace program (userspace.c) for managing character devices. The project included a comprehensive build system managed through a Makefile for efficient compilation. It featured dynamic parameter handling, allowing runtime adjustments via module parameters to test device interactions.
+A complete embedded product designed to monitor and count available parking spaces.
 
-3. Comp_Architecture - 3.1 cach_simlulator project implements a cache simulator which demonstrate my proficiency in memory management and system optimization within computer systems. 3.2 IC_Design repo includes Projects on CMOS design and resistive inverters, alongside advanced simulations of compound gates. 3.3 MIPS (under development)
- 
-4. Robotic_Car - Development of a robotic car with advanced image processing and AI algorithm (developed using Orange software) and obstacle avoidance for safe orbital operations.
+**Highlights**
+- Arduino-based embedded firmware
+- Custom PCB designed in **KiCad**
+- IR sensor subsystem
+- Solar-powered considerations
+- Full documentation: BOM, schematics, test plans, and 3D models
 
-5. Arm_Assembly - Programming of BeagleBone Black GPIO, interrupts, and timers for real-time LED control, demonstrating assembly language, hardware interfacing skills, and debugging toools like CCS and JTAG.
+📁 `Parking_BCB/`  
+📄 Includes final firmware, PCB files, STL models, and reports.
 
-6. Parking_SYS - Design of a PCB for a Parking Counter System, integrating IR sensors and microcontroller for real-time parking space monitoring, displayed on a web app.
+---
 
-7. Mars_Rover - Simulation of a Mars Rover/Lander designed to deploy with a human astronaut and equipment payload without damage at a landing angle of 45 degrees.
+### 📡 RISC-V Based 5G IIoT Hub
+**SoC Design | Embedded | IIoT**
 
-8. Websites - Development of front-end and back-end for websites including the Cultural Division at the Embassy of the Sultanate of Oman in Washington D.C., and the Omani Student Society in Western Australia.
+A conceptual **5G-enabled Industrial IoT hub** integrating embedded control and communication.
 
-9. Aeroponics - An ESP32-Controlled Hydroponic System for plant-growing using microcontroller ship to control and interface with environmental needs.
+**Highlights**
+- RISC-V based SoC concept
+- 5G module integration (Arduino prototype)
+- Motor control (C)
+- System-level architecture and proposal
 
-10. Water_Filter - Development of an affordable household water treatment system presented to Engineers Without Borders.
+📁 `SoC_Design/5G_IIoT_Hub/`  
+📄 Proposal and system documentation included.
 
-11. Robotic_Arm - Creation of a prototype robotic arm for shapes detection with an ESP32 camera and collection of different objects.
+---
 
-12. Sound_Filter - Design and testing of a sound frequency-selective light system, allowing illumination of LEDs based on sound frequencies.
+### ⚙️ Cache Simulator
+**Computer Architecture | C Programming**
 
-13. Eng_Clock - Digital clock application that displays time in various formats including standard time, hex, and binary calculation. Enhances time-reading skills, and supports multiple time zones for educational purposes.
+A cache memory simulator written in C.
 
-14. Grad_Counter - Dynamic countdown application tailored for tracking time until my graduation :) featuring customizable dates, milestone tracking, and timely alerts as the event approaches.
+**Highlights**
+- Configurable cache parameters
+- Test vectors and output logs
+- Makefile-based build
 
-*This repository is intended for job application purposes only and is not for public use or redistribution. All projects contained within are intellectual property of the repository owner.
+📁 `cache_simulator/`
 
-For any further questions or inquiries, feel free to contact me:
-wael@pdx.edu
+---
 
-Thank you for your interest in my work.
-Wail (Wa'el) AL KALBANI
+## 🧠 Embedded Systems
+
+📁 `Embedded_Systems/`
+
+Includes multiple embedded and robotics projects:
+
+- **Aeroponics System** — system design and control documentation
+- **ARM Assembly** — low-level ARM assembly programs and analysis
+- **Robotic Arm** — kinematic modeling and visualization
+- **Robotic Car**
+  - Vision-based color detection and sorting
+  - Mecanum wheel control
+  - Camera calibration
+  - Obstacle avoidance
+  - Python-based control stack
+
+This section demonstrates hands-on experience with **microcontrollers, robotics, sensors, and control software**.
+
+---
+
+## 🔬 IC Design & VLSI
+
+📁 `IC_design/`
+
+CMOS and analog IC design projects developed using **Cadence Virtuoso**.
+
+**Highlights**
+- CMOS inverters (short & long channel)
+- Resistive inverter design
+- Compound CMOS logic gates
+- DC and transient analysis
+- Complete schematics, symbols, and simulation data
+
+📄 Reports and PDFs included for each design.
+
+---
+
+## 🧩 Kernel & Operating Systems
+
+📁 `Kernel_and_OS/`
+
+**Highlights**
+- Linux kernel module development
+- Character device driver
+- User–kernel space interaction
+- GNU/Linux fundamentals
+- Kernel build artifacts and reports
+
+Includes both **educational experiments** and **functional kernel code**.
+
+---
+
+## 🎛️ Analog Circuits
+
+📁 `op_amp_filters/Sound_Filter/`
+
+- Low-pass, high-pass, and band-pass audio filters
+- Operational amplifier based designs
+- Measurement results and final report
+
+---
+
+## 🌐 Web & Visualization
+
+📁 `Kernel_and_OS/Websites/`
+
+- Interactive HTML map project
+- JavaScript-based geographic visualization
+- Academic project documentation
+
+---
+
+## 🧪 Other Engineering Projects
+
+📁 `other/`
+
+- **Mars Rover** — conceptual mechanical/system design
+- **Water Filter** — engineering poster and documentation
+
+---
+
+## 🛠️ Skills Demonstrated
+
+- Embedded C / Arduino / Python
+- PCB design (KiCad)
+- SoC & RISC-V concepts
+- IC design (CMOS, analog)
+- Linux kernel development
+- Robotics & computer vision
+- Hardware–software integration
+- Technical documentation
+
+---
+
+## 📌 Notes
+
+- This repository reflects **academic, lab, and project-based work**
+- Each major project contains its own documentation and reports
+- File structure is preserved as originally developed
+
+---
+
+📫 **Contact**  
+If you’re reviewing this repository for academic or professional purposes, feel free to reach out via GitHub.
+
